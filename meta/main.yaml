@@ -6,6 +6,8 @@ galaxy_info:
   description: Ansible role for install Grafana OSS
   company: Owl Legion
 
+  standalone: true
+
   license: WTFPL
 
   min_ansible_version: "2.9"

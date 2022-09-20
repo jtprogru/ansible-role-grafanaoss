@@ -1,8 +1,8 @@
 ---
-- name: jtprogru.grafanaoss | include tasks for Debian/Ubuntu.
+- name: Grafanaoss | include tasks for Debian/Ubuntu.
   include_tasks: Debian.yaml
   when: ansible_os_family == 'Debian'
 
-- name: jtprogru.grafanaoss | include tasks for RedHat/CenOS.
+- name: Grafanaoss | include tasks for RedHat/CenOS.
   include_tasks: RedHat.yaml
   when: ansible_os_family == 'RedHat'

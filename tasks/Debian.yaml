@@ -1,25 +1,24 @@
 ---
-- name: jtprogru.grafanaoss | include OS-specific variables.
-  ansible.builtin.include_vars: "Debian.yaml"
+- name: Grafanaoss | include OS-specific variables.
+  ansible.builtin.include_vars: Debian.yaml
 
-- name: jtprogru.grafanaoss | add grafana gpg key
+- name: Grafanaoss | add grafana gpg key
   ansible.builtin.apt_key:
-    url: '{{ __grafanaoss_gpgkey_url }}'
+    url: "{{ __grafanaoss_gpgkey_url }}"
     state: present
   when: grafanaoss_installation_type == 'repo'
 
-- name: jtprogru.grafanaoss | add repository for apt
+- name: Grafanaoss | add repository for apt
   ansible.builtin.apt_repository:
-    repo: '{{ __grafanaoss_repository }}'
+    repo: "{{ __grafanaoss_repository }}"
     state: present
     filename: grafanaoss
   when: grafanaoss_installation_type == 'repo'
 
-- name: jtprogru.grafanaoss | install grafana from repository
+- name: Grafanaoss | install grafana from repository
   ansible.builtin.apt:
-    name: '{{ __grafanaoss_package_name }}'
+    name: "{{ __grafanaoss_package_name }}"
     state: present
   when: grafanaoss_installation_type == 'repo'
   notify:
     - restart grafana-server
-
