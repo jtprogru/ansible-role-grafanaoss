@@ -1,12 +1,12 @@
 ---
-- name: jtprogru.grafanaoss | restart grafana-server
+- name: Grafanaoss | restart grafana-server
   ansible.builtin.systemd:
     name: grafana-server
     state: restarted
     daemon_reload: true
   listen: restart grafana
 
-- name: jtprogru.grafanaoss | start grafana-server
+- name: Grafanaoss | start grafana-server
   ansible.builtin.systemd:
     name: grafana-server
     state: started
