@@ -1,0 +1,14 @@
+---
+__grafanaoss_required_packages:
+  - adduser
+  - libfontconfig1
+  - apt-transport-https
+  - software-properties-common
+  - wget
+
+__grafanaoss_gpgkey_url: https://packages.grafana.com/gpg.key
+
+__grafanaoss_repository: deb https://packages.grafana.com/oss/deb stable main
+__grafanaoss_package_name: grafana
+
+# __grafanaoss_prebuilded_binary_url: 'https://dl.grafana.com/oss/release/grafana-{{ grafana_version }}.linux-amd64.tar.gz'

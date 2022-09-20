@@ -1,0 +1,32 @@
+---
+galaxy_info:
+  role_name: grafanaoss
+  namespace: jtprogru
+  author: Michael Savin
+  description: Ansible role for install Grafana OSS
+  company: Owl Legion
+
+  license: WTFPL
+
+  min_ansible_version: "2.9"
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+    - name: EL
+      versions:
+        - "7"
+        - "8"
+        - "9"
+
+  galaxy_tags:
+    - configuration
+    - development
+    - install
+    - grafana
+    - grafanaoss
+    - opensource
+
+dependencies: []

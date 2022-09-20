@@ -1,0 +1,8 @@
+---
+grafanaoss_installation_type: repo
+
+# TODO: Need to implement installation from archive with pre-builded binary
+# grafanaoss_installation_type: archive
+# grafanaoss_user: grafana
+# grafanaoss_group: grafana
+# grafanaoss_version: '9.1.6'
