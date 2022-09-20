@@ -2,7 +2,7 @@ SHELL := /bin/bash
 .SILENT:
 .DEFAULT_GOAL := help
 
-ROLE_NAME="jtprogru.gohugo"
+ROLE_NAME="jtprogru.grafanaoss"
 
 SYS_ANSIBLE_LINT=$(shell which ansible-lint)
 SYS_YAMLLINT=$(shell which yamllint)
